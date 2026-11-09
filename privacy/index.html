@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>«حيّ» · سياسة الخصوصيّة</title>
-<!-- 1.2.0 (4 Nov 2026): from lib/core/net.dart (kAllowedHosts · kNetDeclared) and AndroidManifest.xml at 9130f6e · static, no script -->
+<!-- 1.3.0 (9 Nov 2026), published on hayy-site by his «أيوه، انشرها»: + «صوت حيّ» (Cloudflare Worker hayy-community.hayy-app.workers.dev, Google sign-in) · 1.2.2's download service (dataSync, beta.164) and listening log (counters only) · static, no script -->
 <style>
   :root { --bg: #f7f8f6; --ink: #1d2a24; --muted: #5b6b63; --line: #d9e0dc; --card: #ffffff; --accent: #2f6b55; }
   @media (prefers-color-scheme: dark) {
@@ -33,35 +33,48 @@
 
 <section lang="ar" dir="rtl">
 <h1>«حيّ» · سياسة الخصوصيّة</h1>
-<p class="muted">النسخة 1.2.1 · ٤ نوفمبر ٢٠٢٦ · التطبيق <code>app.hayy.adhan</code> · العنوان: https://hatem240.github.io/hayy-site/privacy/</p>
+<p class="muted">النسخة 1.3.0 · ٩ نوفمبر ٢٠٢٦ · التطبيق <code>app.hayy.adhan</code> · العنوان: https://hatem240.github.io/hayy-site/privacy/</p>
 
-<p>«حيّ» تطبيق أذان ومواقيت وأذكار وقرآن، مجّانيّ خالص لوجه الله، <strong>بلا إعلانات ولا حساب ولا تتبّع</strong>. لا نجمع عنك أيّ بيانات: المواقيت وحساب القبلة والأذكار والإعدادات كلّها تعمل وتُحفظ على هاتفك.</p>
+<p>«حيّ» تطبيق أذان ومواقيت وأذكار وقرآن، مجّانيّ خالص لوجه الله، <strong>بلا إعلانات ولا تتبّع، ولا حساب إلّا إن اخترت «صوت حيّ» بنفسك</strong>. المواقيت وحساب القبلة والأذكار والإعدادات كلّها تعمل وتُحفظ على هاتفك، ولا نجمع عنك شيئًا منها. الشيء الوحيد الذي يُحفظ عندنا هو ما تنشره أنت في «صوت حيّ» (تحت).</p>
 
 <h2>ما يغادر هاتفك</h2>
-<p>لا يتّصل «حيّ» بالإنترنت إلّا ليُنزّل ملفًّا تطلبه أنت (تضغط «تنزيل»، أو تشغّل تلاوة آية لم تُنزَّل بعد، أو تطلب شرح حديث). ولا يتّصل إلّا بهذه المصادر:</p>
+<p>لا يتّصل «حيّ» بالإنترنت إلّا ليُنزّل ملفًّا تطلبه أنت (تضغط «تنزيل»، أو تشغّل تلاوة آية لم تُنزَّل بعد، أو تطلب شرح حديث)، أو حين تستعمل «صوت حيّ» بنفسك. ولا يتّصل إلّا بهذه المصادر:</p>
 <div class="wrap"><table>
 <tr><th>الوجهة</th><th>ما يُنزَّل منها</th></tr>
 <tr><td><code>raw.githubusercontent.com</code></td><td>ملفّات «حيّ» من مستودعه العامّ على GitHub: صفحات المصحف المصوَّر وخطوطه، والتفسير، وكتب الحديث، ونموذج المتابعة بالصوت، والوسائط.</td></tr>
 <tr><td><code>tanzil.net</code> · <code>everyayah.com</code> · <code>quran.ksu.edu.sa</code></td><td>تلاوة الآية بصوت القارئ الذي تختاره، ملفّ لكلّ آية.</td></tr>
 <tr><td><code>hadeethenc.com</code></td><td>الشرح المختصر لحديث واحد حين تضغط «الشرح المختصر».</td></tr>
+<tr><td><code>hayy-community.hayy-app.workers.dev</code></td><td>خدمة «صوت حيّ» على Cloudflare، حين تفتح «صوت حيّ» أو تسجّل الدخول أو تنشر أو تبلّغ (تفاصيلها تحت).</td></tr>
 </table></div>
-<p>كلّ طلب يحمل عنوان الملفّ المطلوب فقط: لا حساب ولا موقع ولا معرّف للجهاز ولا تسجيل صوت. وهذه المواقع تستقبل، كأيّ موقع، عنوان الشبكة (IP) الذي يصلها منه الطلب، بحسب سياسة كلّ منها. وكلّ طلب يُكتب في سجلّ الأحداث على هاتفك وحده.</p>
-<p>أزرار «قيّم «حيّ»» و«أرسل لصديق» و«ابعت للتجربة» و«انضم لقائمة التجربة» و«راسلنا» و«أبلغ عن عطل» و«مشاركة سجلّ التنبيهات» وصور Pinterest تفتح تطبيقًا آخر تختاره أنت (المتجر · المشاركة · البريد · المتصفّح)، ولا يُرسل شيء إلّا إذا أرسلته أنت بيدك. رسالة العطل تحمل طراز الهاتف وإصدار Android وإصدار «حيّ» واسم مدينتك وحالة الأذونات وآخر الأحداث وملاحظتك، ومعها سجلّ التنبيهات وسجلّ الأحداث، وقد يحمل سجلّ الأحداث كلمات تعرّفت عليها المتابعة بالصوت أو البحث بصوتك (سجلّ «دقّة السماع» على هاتفك، حتى ٣٠ كلمة للمرّة)، وتراها كاملة قبل أن ترسلها. ورسالة «انضم لقائمة التجربة» تحمل البريد الذي تكتبه أنت فيها.</p>
+<p>طلبات التنزيل تحمل عنوان الملفّ المطلوب فقط: لا حساب ولا موقع ولا معرّف للجهاز ولا تسجيل صوت. وهذه المواقع تستقبل، كأيّ موقع، عنوان الشبكة (IP) الذي يصلها منه الطلب، بحسب سياسة كلّ منها. وكلّ طلب يُكتب في سجلّ الأحداث على هاتفك وحده.</p>
+<p>أزرار «قيّم «حيّ»» و«أرسل لصديق» و«ابعت للتجربة» و«انضم لقائمة التجربة» و«راسلنا» و«أبلغ عن عطل» و«مشاركة سجلّ التنبيهات» وصور Pinterest تفتح تطبيقًا آخر تختاره أنت (المتجر · المشاركة · البريد · المتصفّح)، ولا يُرسل شيء إلّا إذا أرسلته أنت بيدك. رسالة العطل تحمل طراز الهاتف وإصدار Android وإصدار «حيّ» واسم مدينتك وحالة الأذونات وآخر الأحداث وملاحظتك، ومعها سجلّ التنبيهات وسجلّ الأحداث، وسجلّ دقّة السماع يسجّل عدّادات وقياسات فقط، من غير كلماتك أو نصّ الآية، وتراها كاملة قبل أن ترسلها. ورسالة «انضم لقائمة التجربة» تحمل البريد الذي تكتبه أنت فيها.</p>
+
+<h2>«صوت حيّ» (اختياريّ)</h2>
+<p>«صوت حيّ» مساحة لحلقات صوتيّة وبثّ مباشر بين المستخدمين. لا يعمل إلّا إن دخلت بحساب Google بنفسك ووافقت على شروطه. خادمه على Cloudflare (<code>hayy-community.hayy-app.workers.dev</code>)، وهذا ما يحدث فيه:</p>
+<ul>
+<li><strong>الدخول:</strong> يرسل «حيّ» رمز الدخول الذي تعطيه Google، فيتأكّد الخادم منه. يحفظ الخادم رقم حسابك عند Google واسمك فيه فقط، ولا يحفظ بريدك ولا يظهر رقم حسابك لأحد. ويعطيك جلسة صالحة ٢٤ ساعة.</li>
+<li><strong>ما تنشره:</strong> الحلقة التي تسجّلها وتختار نشرها (الصوت وعنوانها ووصفها واسمك عليها) تُحفظ على Cloudflare، وتبقى «قيد المراجعة» لا يسمعها أحد حتّى تُعتمد.</li>
+<li><strong>البلاغات والحظر:</strong> البلاغ الذي ترسله (ما بلّغت عنه وسببه) وقائمة من حظرتهم.</li>
+<li><strong>البثّ المباشر:</strong> يمرّ الخادم رسائل الاتصال بين المشاركين في الذاكرة فقط، وتُمسح حين تنتهي الغرفة. والميكروفون لا يُنقل إلّا حين تبدأ البثّ أو تتكلّم فيه.</li>
+<li><strong>الحذف:</strong> «حذف الحساب ومشاركاتي» داخل «صوت حيّ» يمسح حسابك وحلقاتك وأصواتها وقائمة حظرك من الخادم، وتبقى بلاغاتك بلا اسم.</li>
+</ul>
+<p>وCloudflare تستقبل، كأيّ موقع، عنوان الشبكة (IP) الذي يصلها منه الطلب، بحسب سياستها.</p>
 
 <h2>الأذونات ولماذا</h2>
 <div class="wrap"><table>
 <tr><th>الإذن</th><th>لماذا</th></tr>
-<tr><td>الإنترنت</td><td>لتنزيل ما تطلبه فقط (أعلاه).</td></tr>
+<tr><td>الإنترنت</td><td>لتنزيل ما تطلبه، ولـ«صوت حيّ» إن استعملته (أعلاه).</td></tr>
 <tr><td>الإشعارات</td><td>لتصلك تنبيهات الصلاة والتذكيرات.</td></tr>
 <tr><td>المنبّهات الدقيقة</td><td>ليُرفع الأذان في دقيقة دخول الوقت نفسها.</td></tr>
 <tr><td>جدولة المنبّهات الدقيقة (Android 12)</td><td>الإذن نفسه على Android 12 وحده.</td></tr>
 <tr><td>التشغيل بعد إعادة التشغيل</td><td>لتعود مواعيد الأذان بعد إطفاء الهاتف وتشغيله.</td></tr>
 <tr><td>خدمة في المقدّمة</td><td>ليكمل الأذان أو التلاوة والشاشة مقفلة.</td></tr>
 <tr><td>خدمة في المقدّمة لتشغيل الصوت</td><td>نوع تلك الخدمة: تشغيل الصوت.</td></tr>
+<tr><td>خدمة في المقدّمة للتنزيل</td><td>ليكمل تنزيل المصحف أو التلاوات الذي بدأته أنت، مع إشعار يتيح إيقافه.</td></tr>
 <tr><td>إبقاء الهاتف مستيقظًا</td><td>كي لا ينام الهاتف في منتصف الأذان.</td></tr>
 <tr><td>الشاشة الكاملة فوق القفل</td><td>تظهر شاشة الأذان و«صلّيت؟» فوق قفل الشاشة كالمنبّه.</td></tr>
 <tr><td>الموقع التقريبيّ</td><td>اختياريّ: يُطلب حين تضغط «من موقعي». وإن سمحت به، يحدّث «حيّ» مدينتك حين تفتحه (مرّة كلّ ثلاث ساعات على الأكثر) لتبقى المواقيت على مكانك. يُختار به أقرب مدينة على هاتفك، ولا يُرسل، ولا يُتابَع في الخلفيّة.</td></tr>
-<tr><td>الميكروفون</td><td>اختياريّ: يُطلب حين تضغط زرّ الميكروفون. <strong>المتابعة بالصوت في المصحف والتلاوة</strong> يفهمها نموذج داخل «حيّ» على هاتفك، ولا يُحفظ الصوت ولا يُرسل. <strong>الأوامر الصوتيّة والبحث بصوتك</strong> يسمعها مُتعرِّف الكلام في هاتفك: على الجهاز نفسه حين يتيحه هاتفك (Android 12 فأحدث)، وإلّا خدمة التعرّف في الهاتف (Google عادةً) التي قد ترسل الصوت إلى صانعها بحسب سياسته، وتقول لك بطاقة الأمر ذلك قبل أن تسمع. «حيّ» نفسه لا يحفظ ما سمعه ولا يرسله.</td></tr>
+<tr><td>الميكروفون</td><td>اختياريّ: يُطلب حين تضغط زرّ الميكروفون. <strong>المتابعة بالصوت في المصحف والتلاوة</strong> يفهمها نموذج داخل «حيّ» على هاتفك، ولا يُحفظ الصوت ولا يُرسل. <strong>الأوامر الصوتيّة والبحث بصوتك</strong> يسمعها مُتعرِّف الكلام في هاتفك: على الجهاز نفسه حين يتيحه هاتفك (Android 12 فأحدث)، وإلّا خدمة التعرّف في الهاتف (Google عادةً) التي قد ترسل الصوت إلى صانعها بحسب سياسته، وتقول لك بطاقة الأمر ذلك قبل أن تسمع. «حيّ» نفسه لا يحفظ ما سمعه ولا يرسله. أمّا <strong>«صوت حيّ»</strong> فيسجّل الحلقة التي تختار تسجيلها، ولا تُرفع إلّا إن نشرتها، وينقل صوتك في البثّ الذي تبدؤه أو تنضمّ إليه.</td></tr>
 <tr><td>الوصول إلى «عدم الإزعاج»</td><td>اختياريّ: لميزة «صامت أثناء الصلاة» وحدها، يُطلب حين تفعّلها.</td></tr>
 </table></div>
 
@@ -69,13 +82,13 @@
 <p>أصوات الأذان والأذكار داخل التطبيق، ولا يُنشر صوت لقارئ أو مؤذّن إلّا بما يسمح به. التلاوات من مصادرها المذكورة أعلاه بحسب تراخيصها، ونصّ الآيات من مشروع تنزيل بإسناده كما في «عن «حيّ»».</p>
 
 <h2>الأطفال</h2>
-<p>«حيّ» لا يطلب اسمًا ولا عمرًا ولا بريدًا، ولا يجمع بيانات من أحد.</p>
+<p>«حيّ» لا يطلب اسمًا ولا عمرًا ولا بريدًا، ولا يجمع بيانات من أحد. و«صوت حيّ» لا يعمل إلّا بحساب Google، وبشروط Google لأعمار أصحاب الحسابات.</p>
 
 <h2>حذف البيانات</h2>
-<p>كلّ ما يحفظه «حيّ» (إعداداتك · تنزيلاتك · سجلّاتك · صورك وأصواتك) على هاتفك وحده، ولا نسخة عندنا منه. لحذفه كلّه: احذف التطبيق، أو امسح بياناته من إعدادات الهاتف.</p>
+<p>كلّ ما يحفظه «حيّ» (إعداداتك · تنزيلاتك · سجلّاتك · صورك وأصواتك) على هاتفك وحده، ولا نسخة عندنا منه. لحذفه كلّه: احذف التطبيق، أو امسح بياناته من إعدادات الهاتف. وما نشرته في «صوت حيّ» تمسحه بـ«حذف الحساب ومشاركاتي» داخله (أعلاه)، أو راسلنا ونمسحه نحن.</p>
 
 <h2>التغييرات</h2>
-<p>في «حيّ» خدمات مجتمع اختياريّة (حساب Google والمشاركة) <strong>غير مفعّلة في هذه النسخة</strong>. إن فُعّلت يومًا أو أُضيفت خدمة تحتاج حسابًا أو ترسل بيانات، فلن تعمل إلّا بموافقتك، وتُحدَّث هذه الصفحة قبلها.</p>
+<p>خدمات المجتمع «صوت حيّ» اختياريّة، ولا تعمل إلّا بدخولك وموافقتك (أعلاه). وإن أُضيفت خدمة أخرى تحتاج حسابًا أو ترسل بيانات، فلن تعمل إلّا بموافقتك، وتُحدَّث هذه الصفحة قبلها.</p>
 
 <h2>التواصل</h2>
 <p><a href="mailto:marsa.fde@gmail.com">marsa.fde@gmail.com</a></p>
@@ -85,35 +98,48 @@
 
 <section lang="en" dir="ltr">
 <h1>Hayy · Privacy policy</h1>
-<p class="muted">Version 1.2.1 · 4 November 2026 · app <code>app.hayy.adhan</code> · address: https://hatem240.github.io/hayy-site/privacy/</p>
+<p class="muted">Version 1.3.0 · 9 November 2026 · app <code>app.hayy.adhan</code> · address: https://hatem240.github.io/hayy-site/privacy/</p>
 
-<p>Hayy is a free prayer-times, adhan, adhkar and Quran app, made purely for the sake of God, with <strong>no ads, no account and no tracking</strong>. We collect no data about you: prayer times, the qibla, the adhkar and your settings all work and stay on your phone.</p>
+<p>Hayy is a free prayer-times, adhan, adhkar and Quran app, made purely for the sake of God, with <strong>no ads and no tracking, and no account unless you choose "Hayy Voice" yourself</strong>. Prayer times, the qibla, the adhkar and your settings all work and stay on your phone, and we collect none of it. The only thing kept on our side is what you publish in "Hayy Voice" (below).</p>
 
 <h2>What leaves your phone</h2>
-<p>Hayy goes online only to download a file you ask for (you tap "Download", play a verse's recitation not yet downloaded, or ask for a hadith's explanation), and only from these sources:</p>
+<p>Hayy goes online only to download a file you ask for (you tap "Download", play a verse's recitation not yet downloaded, or ask for a hadith's explanation), or when you use "Hayy Voice" yourself, and only these places:</p>
 <div class="wrap"><table>
 <tr><th>Destination</th><th>What is downloaded</th></tr>
 <tr><td><code>raw.githubusercontent.com</code></td><td>Hayy's own files from its public GitHub repository: the printed Mushaf's pages and fonts, tafsir, hadith books, the follow-by-voice model and media.</td></tr>
 <tr><td><code>tanzil.net</code> · <code>everyayah.com</code> · <code>quran.ksu.edu.sa</code></td><td>A verse's recitation by the reciter you choose, one file per verse.</td></tr>
 <tr><td><code>hadeethenc.com</code></td><td>The short explanation of one hadith, when you tap it.</td></tr>
+<tr><td><code>hayy-community.hayy-app.workers.dev</code></td><td>The "Hayy Voice" service on Cloudflare, when you open "Hayy Voice", sign in, publish or report (details below).</td></tr>
 </table></div>
-<p>Each request carries only the address of the file asked for: no account, location, device identifier or recording. Like any website, these sites receive the network (IP) address the request comes from, under their own policies. Every request is written to the event log on your phone alone.</p>
-<p>The rate, share, "send to a tester", "join the testers' list", contact, report-a-fault and share-the-log buttons and the Pinterest pictures open another app you choose (the store, the share sheet, mail, the browser). Nothing is sent unless you send it yourself. A fault report carries the phone model, the Android and Hayy versions, your city's name, the permissions' state, the latest events and your note, with the alert and event logs attached; the event log may hold words that following by voice or voice search recognised (the "listening accuracy" log on your phone, up to 30 words at a time), and you see all of it before you send it. The "join the testers' list" mail carries the address you type in it.</p>
+<p>Download requests carry only the address of the file asked for: no account, location, device identifier or recording. Like any website, these sites receive the network (IP) address the request comes from, under their own policies. Every request is written to the event log on your phone alone.</p>
+<p>The rate, share, "send to a tester", "join the testers' list", contact, report-a-fault and share-the-log buttons and the Pinterest pictures open another app you choose (the store, the share sheet, mail, the browser). Nothing is sent unless you send it yourself. A fault report carries the phone model, the Android and Hayy versions, your city's name, the permissions' state, the latest events and your note, with the alert and event logs attached; the listening-accuracy log contains counters and measurements only, without your recognised words or verse text, and you see all of it before you send it. The "join the testers' list" mail carries the address you type in it.</p>
+
+<h2>"Hayy Voice" (optional)</h2>
+<p>"Hayy Voice" is a space for audio episodes and live rooms between users. It works only if you sign in with a Google account yourself and accept its terms. Its server is on Cloudflare (<code>hayy-community.hayy-app.workers.dev</code>), and this is what happens there:</p>
+<ul>
+<li><strong>Signing in:</strong> Hayy sends the sign-in token Google gives it, and the server checks it. The server keeps only your Google account number and your name on it; it does not keep your email, and your account number is shown to no one. You get a session valid for 24 hours.</li>
+<li><strong>What you publish:</strong> an episode you record and choose to publish (the audio, its title, description and your name on it) is stored on Cloudflare and stays "under review", heard by no one, until approved.</li>
+<li><strong>Reports and blocking:</strong> a report you send (what you reported and why) and the list of people you blocked.</li>
+<li><strong>Live rooms:</strong> the server passes the connection messages between participants in memory only, erased when the room ends. The microphone is carried only when you start or speak in a room.</li>
+<li><strong>Deleting:</strong> "Delete my account and posts" inside "Hayy Voice" erases your account, your episodes and their audio and your block list from the server; your reports stay without your name.</li>
+</ul>
+<p>Like any website, Cloudflare receives the network (IP) address a request comes from, under its own policy.</p>
 
 <h2>Permissions and why</h2>
 <div class="wrap"><table>
 <tr><th>Permission</th><th>Why</th></tr>
-<tr><td>Internet</td><td>Only to download what you ask for (above).</td></tr>
+<tr><td>Internet</td><td>To download what you ask for, and for "Hayy Voice" if you use it (above).</td></tr>
 <tr><td>Notifications</td><td>To deliver the prayer alerts and reminders.</td></tr>
 <tr><td>Exact alarms</td><td>So the adhan sounds at the very minute the prayer time begins.</td></tr>
 <tr><td>Schedule exact alarms (Android 12)</td><td>The same grant, on Android 12 only.</td></tr>
 <tr><td>Run at startup</td><td>To re-arm the adhan after the phone restarts.</td></tr>
 <tr><td>Foreground service</td><td>So the adhan or recitation keeps playing with the screen locked.</td></tr>
 <tr><td>Foreground service: media playback</td><td>That service's type: playing sound.</td></tr>
+<tr><td>Foreground service: downloads</td><td>To continue a Mushaf or recitation download you started, with a notification that lets you stop it.</td></tr>
 <tr><td>Keep awake</td><td>So the phone does not sleep in the middle of the adhan.</td></tr>
 <tr><td>Full screen over the lock screen</td><td>The adhan screen and "Have you prayed?" show over the lock screen, like an alarm.</td></tr>
 <tr><td>Approximate location</td><td>Optional: asked when you tap "From my location". If you allow it, Hayy updates your city when you open it (at most once every three hours) so the times follow you. It picks the nearest city on your phone, is not sent, and is never tracked in the background.</td></tr>
-<tr><td>Microphone</td><td>Optional: asked only when you tap a microphone button. <strong>Following by voice in the Mushaf and the recitation</strong> is understood by a model inside Hayy, on your phone; the sound is neither kept nor sent. <strong>Voice commands and voice search</strong> are heard by your phone's speech recognizer: on the device itself where your phone offers it (Android 12 and later), otherwise the phone's recognition service (usually Google's), which may send the voice to its maker under its own policy; the command card tells you so before it listens. Hayy itself neither keeps nor sends what was heard.</td></tr>
+<tr><td>Microphone</td><td>Optional: asked only when you tap a microphone button. <strong>Following by voice in the Mushaf and the recitation</strong> is understood by a model inside Hayy, on your phone; the sound is neither kept nor sent. <strong>Voice commands and voice search</strong> are heard by your phone's speech recognizer: on the device itself where your phone offers it (Android 12 and later), otherwise the phone's recognition service (usually Google's), which may send the voice to its maker under its own policy; the command card tells you so before it listens. Hayy itself neither keeps nor sends what was heard. <strong>"Hayy Voice"</strong> records the episode you choose to record, uploaded only if you publish it, and carries your voice in a live room you start or join.</td></tr>
 <tr><td>Do Not Disturb access</td><td>Optional: for "Silent during prayer" alone, asked when you turn it on.</td></tr>
 </table></div>
 
@@ -121,13 +147,13 @@
 <p>The adhan and adhkar voices are inside the app, and no reciter's or muezzin's voice is published beyond what they allow. Recitations come from the sources above under their licences, and the verse text from the Tanzil project with its attribution, as shown in "About Hayy".</p>
 
 <h2>Children</h2>
-<p>Hayy asks for no name, age or email and collects data from no one.</p>
+<p>Hayy asks for no name, age or email and collects data from no one. "Hayy Voice" works only with a Google account, under Google's age rules for account holders.</p>
 
 <h2>Deleting your data</h2>
-<p>Everything Hayy keeps (settings, downloads, logs, your pictures and sounds) is on your phone alone; we hold no copy. To delete it all, uninstall the app or clear its data in the phone's settings.</p>
+<p>Everything Hayy keeps (settings, downloads, logs, your pictures and sounds) is on your phone alone; we hold no copy. To delete it all, uninstall the app or clear its data in the phone's settings. What you published in "Hayy Voice" you erase with "Delete my account and posts" inside it (above), or write to us and we erase it.</p>
 
 <h2>Changes</h2>
-<p>Hayy has optional community services (a Google account and sharing) that are <strong>not turned on in this version</strong>. Should they ever be turned on, or a service be added that needs an account or sends data, it will work only with your consent, and this page will be updated before it.</p>
+<p>The "Hayy Voice" community services are optional and work only once you sign in and consent (above). Should another service be added that needs an account or sends data, it will work only with your consent, and this page will be updated before it.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:marsa.fde@gmail.com">marsa.fde@gmail.com</a></p>
